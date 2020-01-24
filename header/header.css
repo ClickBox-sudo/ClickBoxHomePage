@@ -1,0 +1,48 @@
+.btn-holder{
+    position: absolute;
+    height: 35px;
+    justify-content: flex-end;
+    z-index: 111;
+}
+.lang-btn{
+    height:100%;
+    padding: 5px;
+    cursor: pointer;
+}
+#video-holder{
+width:100%;
+overflow: hidden;
+position: relative;
+}
+#myVideo {
+    position: absolute;
+    right: -10%;
+    top: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  .baner-holder{
+      position: absolute;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      top:0;
+      left:0;
+      color:rgb(0, 0, 0);
+      justify-content: center;
+      align-items: center;
+  }
+  .banner-screen{
+    width: 50vw;
+    text-align: center;
+    flex-flow: column;
+    background-color: rgba(255, 255, 255, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+.baner-heading{
+    font-size: 150px;
+}
+.baner-info{
+    font-size: 30px;
+
+}

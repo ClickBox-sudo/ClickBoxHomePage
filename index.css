@@ -1,9 +1,14 @@
 body{
     margin:0;
     padding:0;
-    background-color: salmon;
+    font-family: 'Orbitron', sans-serif;;
 }
-
+#master{
+    position: relative;
+}
+h1,p{
+    margin:0;
+}
 *{
     box-sizing: border-box;
 }

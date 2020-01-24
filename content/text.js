@@ -1,21 +1,32 @@
-loadContent=()=>{
+loadText=()=>{
 
-    const textCont=[
+    const textCont={
         
             
-                {
-                    header:'Hallo World'
+                en:{
+                    header:'Hallo World',
+                    menu:[
+                        'Home','About'
+                    ],
+                    mainHeading:'99 / 7',
+                    banerInfo:'Web page for 99€* done in 7 days*'
                 }
             
         ,
         
         
-                {
-                    header:'Хало Ворлд'
+                mk:{
+                    header:'Хало Ворлд',
+                    menu:[
+                        'Дома','За нас'
+                    ],
+                    mainHeading:'99 / 7',
+                    banerInfo:'Веб страна за 99€* готова за 7 дена*'
                 }
             
         
-    ]
+            }
 
     return textCont
 }
+
