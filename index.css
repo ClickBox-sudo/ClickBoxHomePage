@@ -1,0 +1,30 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: salmon;
+}
+
+*{
+    box-sizing: border-box;
+}
+.flex{
+    display:flex;
+    flex-flow: row wrap;
+}
+.b25{
+    width: 25%;
+}
+.b33{
+    width: 33%;
+ 
+}
+.b50{
+width: 50%;
+}
+.b70{
+    width: 70%;
+
+}
+.logo{
+    width: 120px;
+}
