@@ -1,16 +1,23 @@
-const body = $('body');
+// let body = $('body');
+// let master = $('#master');
 // kreiranje kopcinja za jazici
 createLangBtn = () => {
     let langBtnHolder = $('<div>').attr('class', 'btn-holder flex');
     let enBtn = $('<img>').attr('src', "./icons/uk.svg").attr('id', 'uk-btn').attr('class', 'lang-btn');
     let mkBtn = $('<img>').attr('src', "./icons/mk.svg").attr('id', 'mk-btn').attr('class', 'lang-btn');
+    let alBtn = $('<img>').attr('src', "./icons/al.svg").attr('id', 'al-btn').attr('class', 'lang-btn');
+
     $(langBtnHolder).append(enBtn);
     $(langBtnHolder).append(mkBtn);
-    $(body).prepend(langBtnHolder);
+    $(langBtnHolder).append(alBtn);
+
+    $('body').prepend(langBtnHolder);
 };
 
 // kreiranje meni
-createMenu = () => {
+createMenu = (content) => {
+mainMenuDesk(content);
+mainMenuMob(content);
 
 }
 
@@ -35,7 +42,7 @@ createVideo = () => {
     let videoHolder = $('<div>').html(htmlForVideo).attr('id', 'video-holder')
 
 
-    $('#master').append(videoHolder)
+    $(master).append(videoHolder)
 }
 
 // kreiranje baner koj ke bide vrz video
@@ -48,5 +55,5 @@ createHeaderBanner = (content) => {
     $(banerScreen).append(banerHeading);
     $(banerScreen).append(banerInfo);
     $(banerHolder).append(banerScreen);
-    $('#master').append(banerHolder);
+    $(master).append(banerHolder);
 }
