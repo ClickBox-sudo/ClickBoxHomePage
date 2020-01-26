@@ -15,20 +15,33 @@ createMenu = () => {
 }
 
 // kreiranje video holder
-createVideo=()=>{
-    let videoHolder = $('<div>').html('<video autoplay muted loop id="myVideo">\
-    <source src="./content/images/head-back-desktop.mp4" type="video/mp4">\
-    Your browser does not support HTML5 video.\
-  </video>').attr('id','video-holder').css('height',window.innerHeight)
+createVideo = () => {
+    let htmlForVideo
+    onWinChange = (mediaSize) => {
+        if (mediaSize.matches) {
+            htmlForVideo = '<video autoplay muted loop id="myVideo">\
+        <source src="./content/images/head-back-desktop.mp4" type="video/mp4">\
+        Your browser does not support HTML5 video.\
+      </video>';
+        } else {
+            htmlForVideo = '<img src=./content/images/head-bckg-mobile.jpg/>'
+        }
+    };
+    var mediaSize = window.matchMedia("(min-width: 768px)");
+    onWinChange(mediaSize);
+    mediaSize.addListener(onWinChange);
 
 
-$('#master').append(videoHolder)
+    let videoHolder = $('<div>').html(htmlForVideo).attr('id', 'video-holder')
+
+
+    $('#master').append(videoHolder)
 }
 
 // kreiranje baner koj ke bide vrz video
 createHeaderBanner = (content) => {
-    let banerHolder = $('<div>').attr('class', 'baner-holder flex').css('height',window.innerHeight);
-    let banerScreen = $('<div>').attr('class', 'banner-screen flex').css('height',window.innerHeight/2);
+    let banerHolder = $('<div>').attr('class', 'baner-holder flex');
+    let banerScreen = $('<div>').attr('class', 'banner-screen flex');
     let banerHeading = $('<h1>').attr('class', 'baner-heading').text(content.mainHeading);
     let banerInfo = $('<p>').attr('class', 'baner-info').text(content.banerInfo);
 
