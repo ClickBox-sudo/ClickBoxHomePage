@@ -1,29 +1,31 @@
-createLangBtn();
+let graphics = loadGraphic();
+
+createLangBtn(graphics.icons);
 
 $(document).ready(function () {
     let master = $('#master');
-    var langBtn = $('<button>').attr('class','btn').attr('id','langBtn').text('MK');
 let content = loadText();
-main=(content)=>{
+let graphics = loadGraphic();
+main=(content,graphics)=>{
 
-    createVideo()
-    createMenu(content);
-    createHeaderBanner(content);
+    createVideo(graphics)
+    createMenu(content,graphics);
+    createHeaderBanner(content,graphics);
 
     
 }
 
-main(content.en)
+main(content.en,graphics)
                     $('#mk-btn').on('click',()=>{
                         $(master).html(' ');
-                        main(content.mk)
+                        main(content.mk,graphics)
                     });
                     $('#uk-btn').on('click',()=>{
                         $(master).html(' ');
-                        main(content.en)
+                        main(content.en,graphics)
                     });
                     $('#al-btn').on('click',()=>{
                         $(master).html(' ');
-                        main(content.al)
+                        main(content.al,graphics)
                     });
 });

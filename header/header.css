@@ -61,7 +61,7 @@ height:100%;
 
 }
 .mob-menu-icon{
-    top:50px;
+    top:80px;
     left: 35vw;
     position: absolute;
     width: 120px;
@@ -77,8 +77,11 @@ height:100%;
 .stickeyMenu{
     position: fixed;
     top:0px;
+    left: 40vw;
     width: 80px;
     height: 80px;
+    background-color: rgb(13, 0, 255,0.5);
+
 }
 .stickeyMenu img{
     transform: rotateZ(30deg);
@@ -114,9 +117,25 @@ height:100%;
     text-transform: uppercase;
     text-align: center;
     font-size: 20px;
-    background-color: rgba(13, 0, 255, 0.5);
+    background-color: rgb(13, 0, 255);
     border-bottom: 2px solid lightgray;
     width: 100%;
+}
+@media only screen and (min-width: 568px){
+    .mob-menu-icon{
+        top: 15px;
+        width: 80px;
+        height: 80px;
+        left: 40vw;
+    }
+    /* .stickeyMenu{
+        left:85vw;
+        width: 60px;
+        height: 60px;
+    } */
+    #video-holder img{
+        width:100vw;
+    }
 }
 
 @media only screen and (min-width: 768px){
@@ -145,7 +164,7 @@ height:100%;
         font-size: 25px;
     }
     .main-menu-desk ul{
-        width: 50%;
+        width: 80%;
         justify-content: space-evenly;
         
     }

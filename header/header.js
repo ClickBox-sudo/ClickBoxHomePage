@@ -1,11 +1,11 @@
 // let body = $('body');
 // let master = $('#master');
 // kreiranje kopcinja za jazici
-createLangBtn = () => {
+createLangBtn = (icons) => {
     let langBtnHolder = $('<div>').attr('class', 'btn-holder flex');
-    let enBtn = $('<img>').attr('src', "./icons/uk.svg").attr('id', 'uk-btn').attr('class', 'lang-btn');
-    let mkBtn = $('<img>').attr('src', "./icons/mk.svg").attr('id', 'mk-btn').attr('class', 'lang-btn');
-    let alBtn = $('<img>').attr('src', "./icons/al.svg").attr('id', 'al-btn').attr('class', 'lang-btn');
+    let enBtn = $('<img>').attr('src', "./content/icons/"+ icons.ukFlag).attr('id', 'uk-btn').attr('class', 'lang-btn');
+    let mkBtn = $('<img>').attr('src', "./content/icons/"+ icons.mkFlag).attr('id', 'mk-btn').attr('class', 'lang-btn');
+    let alBtn = $('<img>').attr('src', "./content/icons/"+ icons.alFlag).attr('id', 'al-btn').attr('class', 'lang-btn');
 
     $(langBtnHolder).append(enBtn);
     $(langBtnHolder).append(mkBtn);
@@ -15,14 +15,14 @@ createLangBtn = () => {
 };
 
 // kreiranje meni
-createMenu = (content) => {
-mainMenuDesk(content);
-mainMenuMob(content);
+createMenu = (content,graphic) => {
+    mainMenuDesk(content,graphic);
+    mainMenuMob(content,graphic);
 
 }
 
 // kreiranje video holder
-createVideo = () => {
+createVideo = (graphic) => {
     let htmlForVideo
     onWinChange = (mediaSize) => {
         if (mediaSize.matches) {

@@ -1,24 +1,41 @@
 let master = $('#master');
-addClassStickeyMenu=(element,newPic,oldPic)=>{
+addClassStickeyMenu=(element,newPic,oldPic,cssClass)=>{
     element = $(element)
     if (window.pageYOffset > element.offset().top) {
         element.html(' ');
         element.html(newPic);
-        element.addClass("stickeyMenu");
+        element.addClass(cssClass);
       } else if(window.pageYOffset == 0){
         element.html(' ');
         element.html(oldPic);
-        element.removeClass("stickeyMenu");
+        element.removeClass(cssClass);
 
       }
-}
-mainMenuDesk = (menuList) => {
+};
+addClassStickeyMenuDesktop=(element,newPic,oldPic,cssClass)=>{
+    let imgToChange = $(element).children().children()[2]
+    element = $(element)
+
+    console.log(imgToChange)
+    // if (window.pageYOffset > element.offset().top) {
+    //     imgToChange.html(' ');
+    //     imgToChange.html(newPic);
+    //     element.addClass(cssClass);
+    //   } else if(window.pageYOffset == 0){
+    //     imgToChange.html(' ');
+    //     imgToChange.html(oldPic);
+    //     element.removeClass(cssClass);
+
+    //   }
+};
+
+mainMenuDesk = (menuList,graphic) => {
     let mainMenu = $('<div>').attr('class', 'main-menu-desk flex');
     let menuItems = $('<ul>').attr('class', 'desk-menu-list flex');
     let item;
     menuList.menu.forEach((elem, index) => {
         if (index == 2) {
-            item = $('<li>').attr('class', 'flex desk-menu-icon').html('<img src=./logo/Click-Box-logo.svg/>');
+            item = $('<li>').attr('class', 'flex desk-menu-icon').html('<img src=./content/logo/'+graphics.logos.fullWhiteLogo+'/>');
             $(menuItems).append(item);
         }
         item = $('<li>').attr('class', 'flex desk-menu-' + index).text(elem);
@@ -27,11 +44,14 @@ mainMenuDesk = (menuList) => {
     })
     $(mainMenu).append(menuItems);
     $(master).append(mainMenu);
+    
+    window.onscroll = () =>{addClassStickeyMenu(mainMenu,'<img src=./content/logo/'+graphic.logos.onlyBox+'/>','<img src=./content/logo/'+graphics.logos.fullWhiteLogo+'/>',"stickeyMenu")};
+
 }
 
-mainMenuMob = (menuList) => {
-    let mobIcon = $('<div>').attr('class', 'mob-icon flex').html('<img src=./logo/Click-Box-logowhite.svg/>');
-    let mobMenuIcon = $('<div>').attr('class', 'mob-menu-icon flex').html('<img src=./logo/Click-Box-logoBOX.svg/>');
+mainMenuMob = (menuList,graphic) => {
+    let mobIcon = $('<div>').attr('class', 'mob-icon flex').html('<img src=./content/logo/'+graphic.logos.fullWhiteLogo+'/>');
+    let mobMenuIcon = $('<div>').attr('class', 'mob-menu-icon flex').html('<img src=./content/logo/'+graphic.logos.onlyBox+'/>');
     let mainMenu = $('<div>').attr('class', ' flex main-menu-mob');
     let menuItems = $('<ul>').attr('class', 'mob-menu-list flex');
     menuList.menu.forEach((elem, index) => {
@@ -57,7 +77,6 @@ mainMenuMob = (menuList) => {
                 duration: time,
                 easing: "ease-in"
             });
-            console.log(factor)
             factor -= 55;
             time = time + 250;
             if (factor < -55) {
@@ -67,5 +86,7 @@ mainMenuMob = (menuList) => {
             }
         }
     });
-    window.onscroll = () =>{addClassStickeyMenu(mobMenuIcon,'<img src=./logo/Click-Box-logo1.svg/>','<img src=./logo/Click-Box-logoBOX.svg/>')};
+    window.onscroll = () =>{addClassStickeyMenu(mobMenuIcon,'<img src=./content/logo/'+graphic.logos.cWithBox+'/>','<img src=./content/logo/'+graphic.logos.onlyBox+'/>',"stickeyMenu")
+    addClassStickeyMenuDesktop($('.main-menu-desk'),'<img src=./content/logo/'+graphic.logos.onlyBox+'/>','<img src=./content/logo/'+graphics.logos.fullWhiteLogo+'/>',"stickeyDesk")};
+
 }
