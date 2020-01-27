@@ -1,4 +1,17 @@
 let master = $('#master');
+addClassStickeyMenu=(element,newPic,oldPic)=>{
+    element = $(element)
+    if (window.pageYOffset > element.offset().top) {
+        element.html(' ');
+        element.html(newPic);
+        element.addClass("stickeyMenu");
+      } else if(window.pageYOffset == 0){
+        element.html(' ');
+        element.html(oldPic);
+        element.removeClass("stickeyMenu");
+
+      }
+}
 mainMenuDesk = (menuList) => {
     let mainMenu = $('<div>').attr('class', 'main-menu-desk flex');
     let menuItems = $('<ul>').attr('class', 'desk-menu-list flex');
@@ -26,9 +39,9 @@ mainMenuMob = (menuList) => {
         $(menuItems).append(item);
 
     });
+    $(master).append(mobMenuIcon);
     $(mainMenu).append(menuItems);
     $(master).append(mainMenu);
-    $(master).append(mobMenuIcon);
     $(master).append(mobIcon);
 
     //klik za pojavuvanje na meni na mob
@@ -53,8 +66,6 @@ mainMenuMob = (menuList) => {
                 }, 1000);
             }
         }
-
-
-    })
-
+    });
+    window.onscroll = () =>{addClassStickeyMenu(mobMenuIcon,'<img src=./logo/Click-Box-logo1.svg/>','<img src=./logo/Click-Box-logoBOX.svg/>')};
 }
