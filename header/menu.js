@@ -5,10 +5,10 @@ mainMenuDesk = (menuList) => {
     let item;
     menuList.menu.forEach((elem, index) => {
         if (index == 2) {
-            item = $('<li>').attr('id', 'flex desk-menu-icon').html('<img src=./logo/Click-Box-logo.svg/>');
+            item = $('<li>').attr('class', 'flex desk-menu-icon').html('<img src=./logo/Click-Box-logo.svg/>');
             $(menuItems).append(item);
         }
-        item = $('<li>').attr('id', 'flex desk-menu-' + index).text(elem);
+        item = $('<li>').attr('class', 'flex desk-menu-' + index).text(elem);
         $(menuItems).append(item);
 
     })
@@ -22,13 +22,39 @@ mainMenuMob = (menuList) => {
     let mainMenu = $('<div>').attr('class', ' flex main-menu-mob');
     let menuItems = $('<ul>').attr('class', 'mob-menu-list flex');
     menuList.menu.forEach((elem, index) => {
-        item = $('<li>').attr('id', 'flex mob-menu-' + index).text(elem);
+        item = $('<li>').attr('class', 'flex mob-menu-' + index).text(elem);
         $(menuItems).append(item);
 
     });
     $(mainMenu).append(menuItems);
     $(master).append(mainMenu);
     $(master).append(mobMenuIcon);
-    $(master).append(mobIcon)
+    $(master).append(mobIcon);
+
+    //klik za pojavuvanje na meni na mob
+    $(mobMenuIcon).on('click', () => {
+        $('.mob-menu-list').css({ 'display': 'block' })
+        let menuListByClass = $('.mob-menu-list').children()
+        var factor = 165;
+        var time = 500;
+        $(menuListByClass[0]).css('bottom') === `${factor}px` ? factor = -55 : null;
+
+        for (var i = 0; i < menuListByClass.length; i++) {
+            $(menuListByClass[i]).velocity({ bottom: factor }, {
+                duration: time,
+                easing: "ease-in"
+            });
+            console.log(factor)
+            factor -= 55;
+            time = time + 250;
+            if (factor < -55) {
+                setTimeout(() => {
+                    $('.mob-menu-list').css({ 'display': 'none' })
+                }, 1000);
+            }
+        }
+
+
+    })
 
 }
