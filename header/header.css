@@ -128,17 +128,21 @@ height:100%;
         height: 80px;
         left: 40vw;
     }
-    /* .stickeyMenu{
+    .stickeyMenu{
         left:85vw;
         width: 60px;
         height: 60px;
-    } */
+    }
     #video-holder img{
         width:100vw;
     }
 }
 
 @media only screen and (min-width: 768px){
+    *{
+        transition: all 0.2s ease-in-out;
+
+    }
     .btn-holder{
         height: 20px;
 
@@ -170,7 +174,8 @@ height:100%;
     }
 
     .main-menu-desk li:hover{
-        color: white;
+        color:rgb(255, 255, 255);
+        text-shadow:3px 2px 3px rgba(255, 255, 255, 0.5) ;
         
     }
     [class^='desk-menu-']{
@@ -186,6 +191,50 @@ border-radius: 10px;
 
         width: 150px;
         cursor: default;
+    }
+    .stickeyDesk{
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.5);
+        font-size: 15px;
+        color:rgb(13, 0, 255,0.5)
+    }
+    .stickeyDesk:hover{
+        background-color: rgb(255, 255, 255);
+        color:rgb(13, 0, 255);
+        box-shadow: 5px 5px 5px 0px rgba(255, 255, 255,0.5);
+
+        
+    }
+    .stickeyDesk ul{
+        width: 50%;
+    }
+    .stickeyDesk li:nth-child(2){
+padding-right: 25px;
+    }
+    .stickeyDesk li:nth-child(3){
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        left:0;
+        right: 0;
+        margin:0 auto;
+        justify-content: center;
+        transform: rotateZ(30deg);
+        box-shadow: 5px 5px 5px 0px rgba(255, 255, 255, 0.5);
+        border-radius: 25%;
+    }
+    .stickeyDesk li:nth-child(4){
+        padding-left: 25px;
+            }
+    .stickeyDesk li:hover{
+        color:rgb(255, 255, 255);
+        text-shadow:3px 2px 3px rgb(13, 0, 255) ;
+        
+    }
+    .stickeyDesk img{
+        padding: 0px;
+        width: 40px;
+
     }
     #video-holder{
         width:100%;

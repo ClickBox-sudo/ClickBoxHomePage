@@ -13,20 +13,21 @@ addClassStickeyMenu=(element,newPic,oldPic,cssClass)=>{
       }
 };
 addClassStickeyMenuDesktop=(element,newPic,oldPic,cssClass)=>{
-    let imgToChange = $(element).children().children()[2]
+    let imgToChange = $(element).children().children()[2];
+    imgToChange=$(imgToChange).children()
     element = $(element)
 
-    console.log(imgToChange)
-    // if (window.pageYOffset > element.offset().top) {
-    //     imgToChange.html(' ');
-    //     imgToChange.html(newPic);
-    //     element.addClass(cssClass);
-    //   } else if(window.pageYOffset == 0){
-    //     imgToChange.html(' ');
-    //     imgToChange.html(oldPic);
-    //     element.removeClass(cssClass);
+    console.log(imgToChange.attr('src'))
+    if (window.pageYOffset > element.offset().top) {
+        imgToChange.attr('src',' ');
+        imgToChange.attr('src', newPic);
+        element.addClass(cssClass);
+      } else if(window.pageYOffset == 0){
+        imgToChange.attr('src',' ');
+        imgToChange.attr('src', oldPic);
+        element.removeClass(cssClass);
 
-    //   }
+      }
 };
 
 mainMenuDesk = (menuList,graphic) => {
@@ -45,7 +46,6 @@ mainMenuDesk = (menuList,graphic) => {
     $(mainMenu).append(menuItems);
     $(master).append(mainMenu);
     
-    window.onscroll = () =>{addClassStickeyMenu(mainMenu,'<img src=./content/logo/'+graphic.logos.onlyBox+'/>','<img src=./content/logo/'+graphics.logos.fullWhiteLogo+'/>',"stickeyMenu")};
 
 }
 
@@ -87,6 +87,6 @@ mainMenuMob = (menuList,graphic) => {
         }
     });
     window.onscroll = () =>{addClassStickeyMenu(mobMenuIcon,'<img src=./content/logo/'+graphic.logos.cWithBox+'/>','<img src=./content/logo/'+graphic.logos.onlyBox+'/>',"stickeyMenu")
-    addClassStickeyMenuDesktop($('.main-menu-desk'),'<img src=./content/logo/'+graphic.logos.onlyBox+'/>','<img src=./content/logo/'+graphics.logos.fullWhiteLogo+'/>',"stickeyDesk")};
+    addClassStickeyMenuDesktop($('.main-menu-desk'),'./content/logo/'+graphic.logos.cWithBoxBlue,'./content/logo/'+graphics.logos.fullWhiteLogo,"stickeyDesk")};
 
 }

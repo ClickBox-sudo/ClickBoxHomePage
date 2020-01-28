@@ -5,6 +5,7 @@ loadGraphic=()=>{
                 logos:{
                     fullWhiteLogo:'Click-Box-logo.svg',
                    cWithBox:'Click-Box-logo1.svg',
+                   cWithBoxBlue:'Click-Box-logo1Blue.svg',
                    onlyBox:'Click-Box-logoBOX.svg',
                    lickBox:'Click-Box-logo2.svg',
                    lick:'Click-Box-logo3.svg',
