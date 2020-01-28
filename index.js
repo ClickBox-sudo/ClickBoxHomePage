@@ -8,9 +8,10 @@ let content = loadText();
 let graphics = loadGraphic();
 main=(content,graphics)=>{
 
-    createVideo(graphics)
+    createVideo(graphics);
     createMenu(content,graphics);
     createHeaderBanner(content,graphics);
+    createSections(content,graphics);
 
     
 }

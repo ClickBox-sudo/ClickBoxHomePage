@@ -1,0 +1,109 @@
+.sections-wrapper{
+    background-color: rgba(0, 0, 0, 0.301);
+}
+.logo-background{
+background-image: url('../content/logo/logoBackground.svg');
+width: 100vw;
+height: 100vh;
+position: relative;
+overflow: hidden;
+}
+
+.clippy-right-back{
+    position: absolute;
+    background-color: rgba(13, 0, 255);
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);       
+    height: 100vh;
+    top:0;
+    left:0;
+    right: 0;
+    margin:0 auto;
+}
+.clippy-right-info{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    -webkit-clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 5% 100%);
+    clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 5% 100%);       
+    height: 100vh;
+    top:0px;
+    left:0;
+    right: 0;
+    margin:0 auto;
+    justify-content: flex-end;
+}
+.section-header-left{
+    color:rgb(255, 255, 255);
+    left:-80px;
+    font-size: 300%;
+    top:45%;
+    position: absolute;
+transform: rotateZ(-90deg);
+   z-index: 2;
+   text-shadow:5px 5px 5px rgba(13, 0, 255) ;
+
+}
+.info-right{
+    /* border:1px solid black; */
+    padding: 20px;
+    width: 70%;
+    text-align: right;
+
+}
+.clippy-left-back{
+    position: absolute;
+    background-color: rgba(13, 0, 255);
+    -webkit-clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);      
+    height: 100vh;
+    top:0;
+    left:0;
+    right: 0;
+    margin:0 auto;
+}
+.clippy-left-info{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    -webkit-clip-path: polygon(0 0, 93% 0, 68% 100%, 0 100%);
+    clip-path: polygon(0 0, 93% 0, 68% 100%, 0 100%); 
+    height: 100vh;
+    top:0px;
+    left:0;
+    right: 0;
+    margin:0 auto;
+    justify-content: flex-start;
+}
+.section-header-right{
+    color:rgb(255, 255, 255);
+    right:-50px;
+    font-size: 300%;
+    top:45%;
+    position: absolute;
+transform: rotateZ(90deg);
+   z-index: 2;
+   text-shadow:-5px -5px 5px rgba(13, 0, 255) ;
+
+}
+.info-left{
+    /* border:1px solid black; */
+    padding: 20px;
+    width: 70%;
+    text-align: left;
+
+}
+@media only screen and (min-width: 769px){
+    .section-header-left, .section-header-right{
+        font-size: 500%;
+    }
+    .section-header-right{
+        
+        right:50px;
+    
+    }
+    .section-header-left{
+        left:-100px;
+
+    
+    }
+
+}

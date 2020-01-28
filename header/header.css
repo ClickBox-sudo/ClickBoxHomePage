@@ -62,7 +62,7 @@ z-index: 11;
 height:100%;
 
 }
-.mob-menu-icon{
+.mob-icon-menu{
     top:80px;
     left: 35vw;
     position: absolute;
@@ -88,7 +88,7 @@ height:100%;
 .stickeyMenu img{
     transform: rotateZ(30deg);
 }
-.mob-menu-icon img{
+.mob-icon-menu img{
     height: 60%;
 }
 .main-menu-mob{
@@ -124,7 +124,7 @@ height:100%;
     width: 100%;
 }
 @media only screen and (min-width: 568px){
-    .mob-menu-icon{
+    .mob-icon-menu{
         top: 15px;
         width: 80px;
         height: 80px;
@@ -152,7 +152,7 @@ height:100%;
     .mob-icon{
         display:none;
     }
-    .mob-menu-icon{
+    .mob-icon-menu{
         display: none;
     }
     .main-menu-mob{
@@ -203,7 +203,7 @@ border-radius: 10px;
     .stickeyDesk:hover{
         background-color: rgb(255, 255, 255);
         color:rgb(13, 0, 255);
-        box-shadow: 5px 5px 5px 0px rgba(255, 255, 255,0.5);
+        box-shadow: 5px 5px 5px 0px rgba(13, 0, 255, 0.5);
 
         
     }
@@ -222,7 +222,7 @@ padding-right: 25px;
         margin:0 auto;
         justify-content: center;
         transform: rotateZ(30deg);
-        box-shadow: 5px 5px 5px 0px rgba(255, 255, 255, 0.5);
+        box-shadow: 5px 5px 5px 0px rgba(13, 0, 255, 0.5);
         border-radius: 25%;
     }
     .stickeyDesk li:nth-child(4){

@@ -37,11 +37,7 @@ createVideo = (graphic) => {
     var mediaSize = window.matchMedia("(min-width: 768px)");
     onWinChange(mediaSize);
     mediaSize.addListener(onWinChange);
-
-
     let videoHolder = $('<div>').html(htmlForVideo).attr('id', 'video-holder')
-
-
     $(master).append(videoHolder)
 }
 

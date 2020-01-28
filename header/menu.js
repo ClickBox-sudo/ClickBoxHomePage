@@ -1,4 +1,5 @@
 let master = $('#master');
+// stiki klasa za mob meni
 addClassStickeyMenu=(element,newPic,oldPic,cssClass)=>{
     element = $(element)
     if (window.pageYOffset > element.offset().top) {
@@ -12,12 +13,12 @@ addClassStickeyMenu=(element,newPic,oldPic,cssClass)=>{
 
       }
 };
+// stiki klasa za desk meni
 addClassStickeyMenuDesktop=(element,newPic,oldPic,cssClass)=>{
     let imgToChange = $(element).children().children()[2];
     imgToChange=$(imgToChange).children()
     element = $(element)
 
-    console.log(imgToChange.attr('src'))
     if (window.pageYOffset > element.offset().top) {
         imgToChange.attr('src',' ');
         imgToChange.attr('src', newPic);
@@ -30,6 +31,13 @@ addClassStickeyMenuDesktop=(element,newPic,oldPic,cssClass)=>{
       }
 };
 
+scrollToTop=(target)=>{
+    var elmnt = document.getElementById(target);
+  elmnt.scrollIntoView();
+}
+scrollToTarget=(target)=>{
+    $('body').scrollTo(target);
+}
 mainMenuDesk = (menuList,graphic) => {
     let mainMenu = $('<div>').attr('class', 'main-menu-desk flex');
     let menuItems = $('<ul>').attr('class', 'desk-menu-list flex');
@@ -45,15 +53,24 @@ mainMenuDesk = (menuList,graphic) => {
     });
     $(mainMenu).append(menuItems);
     $(master).append(mainMenu);
-    $('.desk-menu-0').on('click',()=>{
 
-    })
+    $('[class^="desk-menu-"]').on('click',(event)=>{
+let className = $(event.target).attr('class').split(' ');
+let idName = $(event.target).text().toLowerCase()
+className=className[className.length-1]
+if(className == 'desk-menu-0'){ 
+    scrollToTop('master');
+}else{
+    scrollToTop(idName);
+}
+
+    });
 
 }
 
 mainMenuMob = (menuList,graphic) => {
     let mobIcon = $('<div>').attr('class', 'mob-icon flex').html('<img src=./content/logo/'+graphic.logos.fullWhiteLogo+'>');
-    let mobMenuIcon = $('<div>').attr('class', 'mob-menu-icon flex').html('<img src=./content/logo/'+graphic.logos.onlyBox+'>');
+    let mobMenuIcon = $('<div>').attr('class', 'mob-icon-menu flex').html('<img src=./content/logo/'+graphic.logos.onlyBox+'>');
     let mainMenu = $('<div>').attr('class', ' flex main-menu-mob');
     let menuItems = $('<ul>').attr('class', 'mob-menu-list flex');
     menuList.menu.forEach((elem, index) => {
@@ -66,8 +83,8 @@ mainMenuMob = (menuList,graphic) => {
     $(master).append(mainMenu);
     $(master).append(mobIcon);
 
-    //klik za pojavuvanje na meni na mob
-    $(mobMenuIcon).on('click', () => {
+    // pojavuvnje na mob meni
+    showHideMobMenu = ()=>{
         $('.mob-menu-list').css({ 'display': 'block' })
         let menuListByClass = $('.mob-menu-list').children()
         var factor = 165;
@@ -87,7 +104,30 @@ mainMenuMob = (menuList,graphic) => {
                 }, 1000);
             }
         }
+    }
+
+    //klik za pojavuvanje na meni na mob
+    $(mobMenuIcon).on('click', () => {
+showHideMobMenu();
     });
+//     $('.mob-menu-0').on('click',()=>{
+//         showHideMobMenu();
+//         scrollToTop('#master');
+//     });
+    $('[class^="mob-menu-"]').on('click',(event)=>{
+        let className = $(event.target).attr('class').split(' ');
+        let idName = $(event.target).text().toLowerCase()
+        className=className[className.length-1]
+        if(className == 'mob-menu-0'){ 
+            showHideMobMenu();
+        scrollToTop('master');
+        }else{
+            showHideMobMenu();
+
+            scrollToTop(idName);
+        }
+        
+            });
     window.onscroll = () =>{addClassStickeyMenu(mobMenuIcon,'<img src=./content/logo/'+graphic.logos.cWithBox+'>','<img src=./content/logo/'+graphic.logos.onlyBox+'>',"stickeyMenu")
     addClassStickeyMenuDesktop($('.main-menu-desk'),'./content/logo/'+graphic.logos.cWithBoxBlue,'./content/logo/'+graphics.logos.fullWhiteLogo,"stickeyDesk")};
 
