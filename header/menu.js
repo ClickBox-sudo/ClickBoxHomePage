@@ -36,22 +36,24 @@ mainMenuDesk = (menuList,graphic) => {
     let item;
     menuList.menu.forEach((elem, index) => {
         if (index == 2) {
-            item = $('<li>').attr('class', 'flex desk-menu-icon').html('<img src=./content/logo/'+graphics.logos.fullWhiteLogo+'/>');
+            item = $('<li>').attr('class', 'flex desk-menu-icon').html('<img src=./content/logo/'+graphics.logos.fullWhiteLogo+'>');
             $(menuItems).append(item);
         }
         item = $('<li>').attr('class', 'flex desk-menu-' + index).text(elem);
         $(menuItems).append(item);
 
-    })
+    });
     $(mainMenu).append(menuItems);
     $(master).append(mainMenu);
-    
+    $('.desk-menu-0').on('click',()=>{
+
+    })
 
 }
 
 mainMenuMob = (menuList,graphic) => {
-    let mobIcon = $('<div>').attr('class', 'mob-icon flex').html('<img src=./content/logo/'+graphic.logos.fullWhiteLogo+'/>');
-    let mobMenuIcon = $('<div>').attr('class', 'mob-menu-icon flex').html('<img src=./content/logo/'+graphic.logos.onlyBox+'/>');
+    let mobIcon = $('<div>').attr('class', 'mob-icon flex').html('<img src=./content/logo/'+graphic.logos.fullWhiteLogo+'>');
+    let mobMenuIcon = $('<div>').attr('class', 'mob-menu-icon flex').html('<img src=./content/logo/'+graphic.logos.onlyBox+'>');
     let mainMenu = $('<div>').attr('class', ' flex main-menu-mob');
     let menuItems = $('<ul>').attr('class', 'mob-menu-list flex');
     menuList.menu.forEach((elem, index) => {
@@ -86,7 +88,7 @@ mainMenuMob = (menuList,graphic) => {
             }
         }
     });
-    window.onscroll = () =>{addClassStickeyMenu(mobMenuIcon,'<img src=./content/logo/'+graphic.logos.cWithBox+'/>','<img src=./content/logo/'+graphic.logos.onlyBox+'/>',"stickeyMenu")
+    window.onscroll = () =>{addClassStickeyMenu(mobMenuIcon,'<img src=./content/logo/'+graphic.logos.cWithBox+'>','<img src=./content/logo/'+graphic.logos.onlyBox+'>',"stickeyMenu")
     addClassStickeyMenuDesktop($('.main-menu-desk'),'./content/logo/'+graphic.logos.cWithBoxBlue,'./content/logo/'+graphics.logos.fullWhiteLogo,"stickeyDesk")};
 
 }

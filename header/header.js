@@ -31,7 +31,7 @@ createVideo = (graphic) => {
         Your browser does not support HTML5 video.\
       </video>';
         } else {
-            htmlForVideo = '<img src=./content/images/head-bckg-mobile.jpg/>'
+            htmlForVideo = '<img src=./content/images/head-bckg-mobile.jpg>'
         }
     };
     var mediaSize = window.matchMedia("(min-width: 768px)");

@@ -3,7 +3,7 @@ function myFunction() {
     var w = window.innerWidth;
 var h = window.innerHeight;
   if(w<768){
-    $('#video-holder').html('<img src=./content/images/head-bckg-mobile.jpg/>');
+    $('#video-holder').html('<img src=./content/images/head-bckg-mobile.jpg>');
 
   }if(w>768){
     $('#video-holder').html('<video autoplay muted loop id="myVideo">\
