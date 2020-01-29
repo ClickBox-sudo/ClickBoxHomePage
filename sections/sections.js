@@ -2,7 +2,6 @@ addClassAnimateSection=(elementToView,elementToAnimate,cssClass)=>{
     elementToView = $(elementToView);
     elementToAnimate = $(elementToAnimate)
     let elemBottom = elementToView.position().top+elementToView.outerHeight(true)
-    console.log(window.pageYOffset ,elemBottom )
     if (window.pageYOffset > elementToView.offset().top-10) {
         elementToAnimate.addClass(cssClass);
       } if(window.pageYOffset >elemBottom || window.pageYOffset < elementToView.offset().top-150){

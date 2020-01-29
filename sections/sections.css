@@ -52,6 +52,7 @@ transform: rotateZ(-90deg);
 }
 .info-right{
     /* border:1px solid black; */
+    flex-flow: column;
     padding: 20px;
     width: 70%;
     text-align: right;
@@ -95,15 +96,23 @@ transform: rotateZ(90deg);
 }
 .info-left{
     /* border:1px solid black; */
+    flex-flow: column;
     padding: 20px;
     width: 70%;
     text-align: left;
     
 }
-        .right-section-animate{
-            opacity: 1;
-            right:-50px;
-        }
+.right-section-animate{
+    opacity: 1;
+    right:-50px;
+}
+.small-header-wrapper{
+    justify-content: flex-end;
+}
+#about .small-header-wrapper{
+    justify-content: flex-start;
+
+}
 @media only screen and (min-width: 769px){
     .section-header-left, .section-header-right{
         font-size: 500%;

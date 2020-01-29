@@ -22,6 +22,7 @@ main=(content,graphics)=>{
     let rightSectionHeaderAbout = $('#about-header');
     let sectionContact = $('#contact');
     let leftSectionHeaderContact = $('#contact-header')
+    
     window.onscroll = () =>{
     addClassStickeyMenu(mobMenuIcon,'<img src=./content/logo/'+graphics.logos.cWithBox+'>','<img src=./content/logo/'+graphics.logos.onlyBox+'>',"stickeyMenu")
     addClassStickeyMenuDesktop(mobMenuIconDesk,'./content/logo/'+graphics.logos.cWithBoxBlue,'./content/logo/'+graphics.logos.fullWhiteLogo,"stickeyDesk")
