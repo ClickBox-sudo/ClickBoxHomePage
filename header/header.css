@@ -246,7 +246,7 @@ padding-right: 25px;
         }
     #myVideo {
         position: absolute;
-        right: -20%;
+        right: 0%;
         top: 0;
         min-width: 100%; 
         min-height: 100%;

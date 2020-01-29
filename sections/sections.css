@@ -33,14 +33,21 @@ overflow: hidden;
     justify-content: flex-end;
 }
 .section-header-left{
+    opacity: 0;
     color:rgb(255, 255, 255);
-    left:-80px;
+    left:-180px;
     font-size: 300%;
     top:45%;
     position: absolute;
 transform: rotateZ(-90deg);
    z-index: 2;
    text-shadow:5px 5px 5px rgba(13, 0, 255) ;
+   transition: all 0.5s ease-in;
+
+}
+.left-section-animate{
+    opacity: 1;
+    left:-80px;
 
 }
 .info-right{
@@ -48,7 +55,7 @@ transform: rotateZ(-90deg);
     padding: 20px;
     width: 70%;
     text-align: right;
-
+    
 }
 .clippy-left-back{
     position: absolute;
@@ -74,14 +81,16 @@ transform: rotateZ(-90deg);
     justify-content: flex-start;
 }
 .section-header-right{
+    opacity: 0;
     color:rgb(255, 255, 255);
-    right:-50px;
+    right:-150px;
     font-size: 300%;
     top:45%;
     position: absolute;
 transform: rotateZ(90deg);
    z-index: 2;
    text-shadow:-5px -5px 5px rgba(13, 0, 255) ;
+   transition: all 0.5s ease-in;
 
 }
 .info-left{
@@ -89,21 +98,31 @@ transform: rotateZ(90deg);
     padding: 20px;
     width: 70%;
     text-align: left;
-
+    
 }
+        .right-section-animate{
+            opacity: 1;
+            right:-50px;
+        }
 @media only screen and (min-width: 769px){
     .section-header-left, .section-header-right{
         font-size: 500%;
     }
     .section-header-right{
         
-        right:50px;
+        right:-200px;
     
     }
     .section-header-left{
-        left:-100px;
+        left:-400px;
 
-    
     }
-
+.left-section-animate{
+    opacity: 1;
+    left:-100px
+}
+.right-section-animate{
+    opacity: 1;
+    right:50px;
+}
 }

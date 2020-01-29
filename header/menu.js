@@ -128,7 +128,5 @@ showHideMobMenu();
         }
         
             });
-    window.onscroll = () =>{addClassStickeyMenu(mobMenuIcon,'<img src=./content/logo/'+graphic.logos.cWithBox+'>','<img src=./content/logo/'+graphic.logos.onlyBox+'>',"stickeyMenu")
-    addClassStickeyMenuDesktop($('.main-menu-desk'),'./content/logo/'+graphic.logos.cWithBoxBlue,'./content/logo/'+graphics.logos.fullWhiteLogo,"stickeyDesk")};
 
 }

@@ -13,7 +13,24 @@ main=(content,graphics)=>{
     createHeaderBanner(content,graphics);
     createSections(content,graphics);
 
-    
+
+    let mobMenuIcon= $('.mob-icon-menu');
+    let mobMenuIconDesk = $('.main-menu-desk');
+    let sectionService = $('#services');
+    let leftSectionHeaderServices = $('#services-header');
+    let sectionAbout = $('#about');
+    let rightSectionHeaderAbout = $('#about-header');
+    let sectionContact = $('#contact');
+    let leftSectionHeaderContact = $('#contact-header')
+    window.onscroll = () =>{
+    addClassStickeyMenu(mobMenuIcon,'<img src=./content/logo/'+graphics.logos.cWithBox+'>','<img src=./content/logo/'+graphics.logos.onlyBox+'>',"stickeyMenu")
+    addClassStickeyMenuDesktop(mobMenuIconDesk,'./content/logo/'+graphics.logos.cWithBoxBlue,'./content/logo/'+graphics.logos.fullWhiteLogo,"stickeyDesk")
+    addClassAnimateSection(sectionService,leftSectionHeaderServices,'left-section-animate');
+    addClassAnimateSection(sectionContact,leftSectionHeaderContact,'left-section-animate');
+    addClassAnimateSection(sectionAbout,rightSectionHeaderAbout,'right-section-animate')
+
+};
+ 
 }
 
 main(content.en,graphics)
