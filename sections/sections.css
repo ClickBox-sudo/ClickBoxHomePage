@@ -19,13 +19,15 @@ overflow: hidden;
     left:0;
     right: 0;
     margin:0 auto;
+    overflow: scroll;
+
 }
 .clippy-right-info{
     position: absolute;
     background-color: rgb(255, 255, 255);
     -webkit-clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 5% 100%);
     clip-path: polygon(30% 0%, 100% 0%, 100% 100%, 5% 100%);       
-    height: 100vh;
+    min-height: 100vh;
     top:0px;
     left:0;
     right: 0;
@@ -53,8 +55,9 @@ transform: rotateZ(-90deg);
 .info-right{
     /* border:1px solid black; */
     flex-flow: column;
+    align-items: flex-end;
     padding: 20px;
-    width: 70%;
+    width: 90%;
     text-align: right;
     
 }
@@ -98,7 +101,7 @@ transform: rotateZ(90deg);
     /* border:1px solid black; */
     flex-flow: column;
     padding: 20px;
-    width: 70%;
+    width: 90%;
     text-align: left;
     
 }
@@ -111,9 +114,12 @@ transform: rotateZ(90deg);
 }
 #about .small-header-wrapper{
     justify-content: flex-start;
-
 }
+
 @media only screen and (min-width: 769px){
+    .clippy-right-back{
+        overflow: visible;
+    }
     .section-header-left, .section-header-right{
         font-size: 500%;
     }
@@ -133,5 +139,10 @@ transform: rotateZ(90deg);
 .right-section-animate{
     opacity: 1;
     right:50px;
+}
+
+
+.small-header{
+ font-size: 150%;   
 }
 }
