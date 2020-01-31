@@ -50,7 +50,7 @@ li[class*="template-galery-list-item-"]:hover{
 
         }
         .popup-galery-wrapper{
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             width:100vw;
@@ -92,6 +92,9 @@ flex-flow: row;
         }
         .popup-galery-slide-wrapper{
             width: 100%;
+            height: 100vh;
+            overflow: auto;
+            overflow-y: auto;
         }
         .popup-galery-picture-holder{
             width: 100vw;

@@ -52,7 +52,7 @@ loadGraphic=()=>{
    service:{
     thumbnails:['services.jpg'],
     icons:['services-icon.png'],
-    screenShots:['screen-1.jpg','screen-2.jpg','screen-3.jpg','screen-4.jpg','screen-5.jpg','screen-6.png'],
+    screenShots:['screen-1.jpg','screen-2.jpg','screen-3.jpg','screen-4.jpg','screen-5.jpg','screen-6.png','beatySalon.jpg','gallery-1.jpg','mobile-1.jpg','mobile-homepage-1.jpg','mobile-menu-1.jpg'],
 },
                 }
             
