@@ -27,7 +27,9 @@ loadGraphic=()=>{
                 icons:{
                     ukFlag:'uk.svg',
                     mkFlag:'mk.svg',
-                    alFlag:'al.svg'
+                    alFlag:'al.svg',
+                    leftArrow:'btn-left.png',
+                    rightArrow:'btn-right.png'
 
 
                 },
@@ -35,22 +37,22 @@ loadGraphic=()=>{
                    food:{
                             thumbnails:['food.jpg'],
                             icons:['food-icon.png'],
-                            screenShots:[],
+                            screenShots:['screen-1.jpg','screen-2.jpg','screen-3.jpg','screen-4.jpg','screen-5.jpg','screen-6.png'],
                    },
                    art:{
                     thumbnails:['art.jpg'],
                     icons:['art-icon.png'],
-                    screenShots:[],
-           },             
+                    screenShots:['screen-1.jpg','screen-2.jpg','screen-3.jpg','screen-4.jpg','screen-5.jpg','screen-6.png'],
+                },             
            law:{
             thumbnails:['law.jpg'],
             icons:['law-icon.png'],
-            screenShots:[],
-   },             
+            screenShots:['screen-1.jpg','screen-2.jpg','screen-3.jpg','screen-4.jpg','screen-5.jpg','screen-6.png'],
+        },             
    service:{
     thumbnails:['services.jpg'],
     icons:['services-icon.png'],
-    screenShots:[],
+    screenShots:['screen-1.jpg','screen-2.jpg','screen-3.jpg','screen-4.jpg','screen-5.jpg','screen-6.png'],
 },
                 }
             
