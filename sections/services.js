@@ -17,7 +17,7 @@ createServices=(content,graphics)=>{
     //prv disclaimer
 let disclaimer = createDisclamer(content);
 let offers = createOffers(content.servicesInfo.offers);
-let templateGalery = createTemplateGalery(content.servicesInfo.templates,graphics);
+let templateGalery = createTemplateGalery(content.servicesInfo.templates,graphics.templates);
     let wrapper = $('<section>').attr('id','services').attr('class','flex logo-background');
     let headerHolderBack = $('<div>').attr('class','flex header-holder clippy-right-back');
     let header = $('<h1>').attr('class','flex section-header-left').attr('id','services-header').text(content.servicesHeader);

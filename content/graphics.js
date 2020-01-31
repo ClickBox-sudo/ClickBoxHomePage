@@ -30,6 +30,28 @@ loadGraphic=()=>{
                     alFlag:'al.svg'
 
 
+                },
+                templates:{
+                   food:{
+                            thumbnails:['food.jpg'],
+                            icons:['food-icon.png'],
+                            screenShots:[],
+                   },
+                   art:{
+                    thumbnails:['art.jpg'],
+                    icons:['art-icon.png'],
+                    screenShots:[],
+           },             
+           law:{
+            thumbnails:['law.jpg'],
+            icons:['law-icon.png'],
+            screenShots:[],
+   },             
+   service:{
+    thumbnails:['services.jpg'],
+    icons:['services-icon.png'],
+    screenShots:[],
+},
                 }
             
         
