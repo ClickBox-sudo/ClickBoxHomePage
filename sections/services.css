@@ -113,6 +113,7 @@ flex-flow: row;
     }
     .offer-wrapper{
     width: 33%;
+    flex-flow: column;
 
     }
 
