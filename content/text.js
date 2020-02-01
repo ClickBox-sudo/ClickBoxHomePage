@@ -43,7 +43,18 @@ loadText = () => {
                     Each web site is made according to the latest standards and trends and each web site uses techniques used by the world\'s largest companies. \
                     You are not building websites from scratch. We do not use finished templates or themes. We create them entirely according to your taste. We have a solution for all types of businesses, from micro businesses to huge companies.',
             contactHeader: 'Contact',
-            contactInfo: 'Lorem Ipsim Lorem Ipsim Lorem Ipsim Lorem Ipsim Lorem Ipsim Lorem Ipsim Lorem Ipsim Lorem Ipsim Lorem Ipsim'
+            contactInfo:{
+                info:{
+                    email:'clickbox1@gmail.com',
+                    tel:'+38970 707 564',
+                    location:'Skopje RNM'
+                    },
+                    inputHead:{
+                        email:'Your e-mail',
+                        sub:'Subject',
+                        message:'Message'
+                    }
+            }
         }
 
         ,
@@ -89,8 +100,18 @@ loadText = () => {
                     Секоја веб страна е направена според последните стандарди и трендови и во секоја вебстрана се користат техники какви што користат најголемите светски компании.\
                     Ние Веб страниците ги градиме од нула. Не користиме готови темплејти или теми. Ги креираме целосно според вашиот вкус. Имаме решение за сите типови на бизнис, од микро бизниси па се до огромни компании.',
             contactHeader: 'Контакт',
-            contactInfo: 'Lorem Ipsim Lorem Ipsim Lorem Ipsim Lorem Ipsim Lorem Ipsim Lorem Ipsim Lorem Ipsim Lorem Ipsim Lorem Ipsim'
-        },
+            contactInfo:{
+                info:{
+                    email:'clickbox1@gmail.com',
+                    tel:'+38970 707 564',
+                    location:'Скопје РСМ'
+                    },
+                    inputHead:{
+                        email:'Вашиот e-mail',
+                        sub:'Наслов',
+                        message:'Порака'
+                    }
+            }        },
         al: {
             header: 'Përshendetje Botë',
             menu: [
@@ -132,7 +153,18 @@ loadText = () => {
                     Do faqe në internet është bërë sipas standardeve dhe tendencave të fundit dhe çdo faqe në internet përdor teknika të përdorura nga kompanitë më të mëdha në botë. \
                     Ju nuk po ndërtoni faqet e internetit nga e para. Ne nuk përdorim shabllone ose tema të përfunduara. Ne i krijojmë ato plotësisht sipas shijes tuaj. Ne kemi një zgjidhje për të gjitha llojet e bizneseve, nga bizneset mikro deri te kompanitë e mëdha.',
             contactHeader: 'Kontakt',
-            contactInfo: 'Lorem Ipsim Lorem Ipsim Lorem Ipsim Lorem Ipsim Lorem Ipsim Lorem Ipsim Lorem Ipsim Lorem Ipsim Lorem Ipsim'
+            contactInfo:{
+                info:{
+                    email:'clickbox1@gmail.com',
+                    tel:'+38970 707 564',
+                    location:'Shkup RVM'
+                    },
+                    inputHead:{
+                        email:'Juaj e-mail',
+                        sub:'Subjekt',
+                        message:'Mesazh'
+                    }
+            }        
         }
 
 

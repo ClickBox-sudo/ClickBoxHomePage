@@ -50,5 +50,6 @@ let templateGalery = createTemplateGalery(content.servicesInfo.templates,graphic
      $(infoHolder).append(info);
      $(wrapper).append(header);
      $(headerHolderBack).append(infoHolder);
+     
     return $(wrapper).append(headerHolderBack)
 }

@@ -29,8 +29,20 @@ loadGraphic = () => {
             mkFlag: 'mk.svg',
             alFlag: 'al.svg',
             leftArrow: 'btn-left.png',
-            rightArrow: 'btn-right.png'
+            rightArrow: 'btn-right.png',
+            social:{
 
+                fb:'<i class="fab fa-facebook-square"></i>',
+                insta:'<i class="fab fa-instagram"></i>',
+                linkedin:'<i class="fab fa-linkedin"></i>',
+                git:'<i class="fab fa-github-square"></i>'
+            },
+            contact:{
+
+                mail:'<i class="far fa-envelope"></i>',
+                mob:'<i class="fas fa-mobile-alt"></i>',
+                location:'<i class="fas fa-map-marker-alt"></i>'
+            }
 
         },
         templates: {

@@ -5,7 +5,6 @@ createPopUpGalery = (category) => {
     let folder = heading[0];
     heading = heading[0].toUpperCase()
     let screenshots = category.screenShots
-    console.log('./content/screen-shots/'+folder+'/'+screenshots)
     let popupGaleryWrapper = $('<div>').attr('class', 'flex popup-galery-wrapper');
 
     let popupGaleryHeaderWrapper = $('<div>').attr('class', 'flex popup-galery-header-wrapper');
@@ -39,7 +38,6 @@ let counter=0;
 carusel=()=>{
     counter<0?counter=screenshots.length-1:null
     counter>screenshots.length-1?counter=0:null;
-    console.log(counter)
     $(picture).attr('src','./content/screen-shots/'+folder+'/'+screenshots[counter]);
     $(screenShotHeader).text(heading+'-'+counter)
 }
@@ -56,16 +54,17 @@ carusel=()=>{
 }
 
 createListPanel = (content, graphic) => {
+    let idNames = Object.keys(graphic)
     let contentList = content.list;
     let listHolder = $('<div>').attr('class', 'template-list-holder');
     let list = $('<ul>').attr('class', 'template-list-panel');
-
     contentList.forEach((elem, index) => {
-        let item = $('<li>').attr('class', 'template-galery-list-item-' + index).text(elem);
+        let item = $('<li>').attr('class', 'template-galery-list-item-' + idNames[index]).text(elem);
         $(list).append(item)
     })
 
-    $(listHolder).append(list)
+    $(listHolder).append(list);
+
 
     return listHolder
 };
@@ -127,7 +126,10 @@ createTemplateGalery = (content, graphic) => {
     $(templateGaleryListWrapper).append(templateGaleryHeader);
     $(templateGaleryListWrapper).append(templateList);
 
-    $(templateGaleryWrapper).append(templateGaleryListWrapper)
-    $(templateGaleryWrapper).append(picturePanel)
+    $(templateGaleryWrapper).append(templateGaleryListWrapper);
+    $(templateGaleryWrapper).append(picturePanel);
+
+    
+
     return templateGaleryWrapper
 }
