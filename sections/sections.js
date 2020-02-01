@@ -8,16 +8,27 @@ addClassAnimateSection = (elementToView, elementToAnimate, cssClass) => {
     elementToAnimate.removeClass(cssClass);
   }
 };
+
+createFooter=(graphics)=>{
+  let logoIcon = graphics.logos.fullWhiteLogo
+  console.log(logoIcon)
+  let footer = $('<div>').attr('class','flex footer');
+  let logo = $('<img>').attr('src','./content/logo/'+logoIcon)
+  $(footer).append(logo)
+  return footer
+}
 createSections = (content, graphics) => {
   let sectionsWrapper = $('<div>').attr('class', ' flex sections-wrapper');
 
   let services = createServices(content, graphics);
   let about = createAbout(content, graphics);
   let contact = createContact(content, graphics);
+  let footer = createFooter(graphics)
 
   $(sectionsWrapper).append(services);
   $(sectionsWrapper).append(about);
   $(sectionsWrapper).append(contact);
+  $(sectionsWrapper).append(footer);
 
   $(master).append(sectionsWrapper);
   $('li[class^="template-galery-list-item-"]').click((event) => {

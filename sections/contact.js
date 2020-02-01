@@ -42,7 +42,6 @@ let socialIconHolder = $('<div>').attr('class','flex social-icon-holder');
 let infoListWrapper = $('<div>').attr('class','flex info-list-wrapper');
 let contactContainer = $('<ul>').attr('class','flex');
 contactList.forEach((elem,index)=>{
-    console.log(contactIcons[contactIconList[index]]);
     let item = $('<li>').attr('class','flex contact-'+elem).html(contactIcons[contactIconList[index]]).append($('<p>').text(contact[elem]))
     $(contactContainer).append(item);
 });

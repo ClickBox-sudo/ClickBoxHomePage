@@ -33,8 +33,6 @@ addClassStickeyMenuDesktop = (element, newPic, oldPic, cssClass) => {
 
 scrollToTop = (target) => {
     var elmnt = document.getElementById(target);
-    console.log(elmnt)
-
     elmnt.scrollIntoView();
 }
 scrollToTarget = (target) => {
