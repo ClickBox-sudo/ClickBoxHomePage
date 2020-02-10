@@ -49,12 +49,12 @@ loadGraphic = () => {
             food: {
                 thumbnails: ['food.jpg'],
                 icons: ['food-icon.png'],
-                screenShots: ['screen-1.jpg', 'screen-2.jpg', 'screen-3.jpg', 'screen-4.jpg', 'screen-5.jpg', 'screen-6.png'],
+                screenShots: ['Cafe/Cafe.png','Cafe/FireShot Capture 023.png','Lounge/FireShot Capture 018.png','Lounge/FireShot Capture 024.png','Pizza/Pizza mob.png','Pizza/Pizza web.png','screen-1.jpg', 'screen-2.jpg', 'screen-3.jpg', 'screen-4.jpg', 'screen-5.jpg', 'screen-6.png'],
             },
             art: {
                 thumbnails: ['art.jpg'],
                 icons: ['art-icon.png'],
-                screenShots: ['screen-1.jpg', 'screen-2.jpg', 'screen-3.jpg', 'screen-4.jpg', 'screen-5.jpg', 'screen-6.png'],
+                screenShots: ['Tattoo/Tattoo1.png','Tattoo/Tattoo2.png','screen-1.jpg', 'screen-2.jpg', 'screen-3.jpg', 'screen-4.jpg', 'screen-5.jpg', 'screen-6.png'],
             },
             law: {
                 thumbnails: ['law.jpg'],
@@ -64,7 +64,7 @@ loadGraphic = () => {
             service: {
                 thumbnails: ['services.jpg'],
                 icons: ['services-icon.png'],
-                screenShots: ['screen-1.jpg', 'screen-2.jpg', 'screen-3.jpg', 'screen-4.jpg', 'screen-5.jpg', 'screen-6.png', 'beatySalon.jpg', 'gallery-1.jpg', 'mobile-1.jpg', 'mobile-homepage-1.jpg', 'mobile-menu-1.jpg'],
+                screenShots: ['Auto/AutoDesktop.png','Auto/AutoMob.png','Clothes/Clothing.png','Clothes/Clothing2.png','Clothes/Clothing3.png','screen-1.jpg', 'screen-2.jpg', 'screen-3.jpg', 'screen-4.jpg', 'screen-5.jpg', 'screen-6.png', 'beatySalon.jpg', 'gallery-1.jpg', 'mobile-1.jpg', 'mobile-homepage-1.jpg', 'mobile-menu-1.jpg'],
             },
         }
 
