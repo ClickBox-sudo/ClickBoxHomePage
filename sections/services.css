@@ -63,9 +63,11 @@ li[class*="template-galery-list-item-"]:hover{
         }
         .popup-galery-header-wrapper{
             justify-content: space-between;
+            padding: 10px;
         }
+        
         .galery-header-wrapper{
-flex-flow: row;
+            flex-flow: row;
         }
         .popup-back-btn , .popup-header{
 
@@ -91,10 +93,11 @@ flex-flow: row;
 
         }
         .popup-galery-slide-wrapper{
-            width: 100%;
+            width: 80%;
             height: 100vh;
             overflow: auto;
             overflow-y: auto;
+            margin: auto;
         }
         .popup-galery-picture-holder{
             width: 100vw;
