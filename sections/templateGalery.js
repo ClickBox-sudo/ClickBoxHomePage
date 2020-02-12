@@ -1,6 +1,6 @@
 createPopUpGalery = (category) => {
 
-    let icon = category.icons[0];
+    let icon = category.icons[1];
     let heading = icon.split('-');
     let folder = heading[0];
     heading = heading[0].toUpperCase()
@@ -9,7 +9,7 @@ createPopUpGalery = (category) => {
 
     let popupGaleryHeaderWrapper = $('<div>').attr('class', 'flex popup-galery-header-wrapper');
     let popupHeader = $('<img>').attr('class', 'flex popup-header').attr('src','./content/icons/'+icon);
-    let backButton = $('<img>').attr('src', './content/logo/Click-Box-logoBOX.svg').attr('class', 'flex popup-back-btn');
+    let backButton = $('<img>').attr('src', './content/icons/close-icon.png').attr('class', 'flex popup-back-btn');
     let screenShotHeader = $('<h4>').attr('class', 'flex popup-screenshot-header').text(heading);
 
     let popupGalerySlideWrapper = $('<div>').attr('class', 'flex popup-galery-slide-wrapper');
@@ -74,7 +74,7 @@ createPictureItem = (category, heading) => {
     let thumbnail = $('<img>').attr('src', './content/images/' + category.thumbnails);
 
     let thumbnailOverlay = $('<div>').attr('class', 'flex thumbnail-overlay-' + heading);
-    let thumbnailIcon = $('<img>').attr('class', 'thumbnail-icon-' + heading).attr('src', './content/icons/' + category.icons);
+    let thumbnailIcon = $('<img>').attr('class', 'thumbnail-icon-' + heading).attr('src', './content/icons/' + category.icons[0]);
     let thumbnailHeading = $('<p>').attr('class', 'thumbnail-heading-' + heading).text(heading);
 
     $(thumbnailOverlay).append(thumbnailIcon);

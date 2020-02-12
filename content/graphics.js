@@ -30,6 +30,7 @@ loadGraphic = () => {
             alFlag: 'al.svg',
             leftArrow: 'btn-left.png',
             rightArrow: 'btn-right.png',
+            closeIcon:'close-icon.png',
             social:{
 
                 fb:'<i class="fab fa-facebook-square"></i>',
@@ -48,22 +49,22 @@ loadGraphic = () => {
         templates: {
             food: {
                 thumbnails: ['food.jpg'],
-                icons: ['food-icon.png'],
+                icons: ['food-icon.png','food-icon-white.png'],
                 screenShots: ['screen-1.jpg', 'screen-2.jpg', 'screen-3.jpg', 'screen-4.jpg', 'screen-5.jpg', 'screen-6.png'],
             },
             art: {
                 thumbnails: ['art.jpg'],
-                icons: ['art-icon.png'],
+                icons: ['art-icon.png','art-icon-white.png'],
                 screenShots: ['screen-1.jpg', 'screen-2.jpg', 'screen-3.jpg', 'screen-4.jpg', 'screen-5.jpg', 'screen-6.png'],
             },
             law: {
                 thumbnails: ['law.jpg'],
-                icons: ['law-icon.png'],
+                icons: ['law-icon.png','law-icon-white.png'],
                 screenShots: ['screen-1.jpg', 'screen-2.jpg', 'screen-3.jpg', 'screen-4.jpg', 'screen-5.jpg', 'screen-6.png'],
             },
             service: {
                 thumbnails: ['services.jpg'],
-                icons: ['services-icon.png'],
+                icons: ['services-icon.png','services-icon-white.png'],
                 screenShots: ['screen-1.jpg', 'screen-2.jpg', 'screen-3.jpg', 'screen-4.jpg', 'screen-5.jpg', 'screen-6.png', 'beatySalon.jpg', 'gallery-1.jpg', 'mobile-1.jpg', 'mobile-homepage-1.jpg', 'mobile-menu-1.jpg'],
             },
         }
