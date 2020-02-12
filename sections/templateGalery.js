@@ -1,6 +1,7 @@
 createPopUpGalery = (category) => {
 
     let icon = category.icons[1];
+    console.log(icon)
     let heading = icon.split('-');
     let folder = heading[0];
     heading = heading[0].toUpperCase()

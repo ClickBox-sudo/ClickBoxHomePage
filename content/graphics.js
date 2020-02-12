@@ -49,38 +49,23 @@ loadGraphic = () => {
         templates: {
             food: {
                 thumbnails: ['food.jpg'],
-<<<<<<< HEAD
                 icons: ['food-icon.png','food-icon-white.png'],
-                screenShots: ['screen-1.jpg', 'screen-2.jpg', 'screen-3.jpg', 'screen-4.jpg', 'screen-5.jpg', 'screen-6.png'],
+                screenShots: ['Cafe/Cafe.png','Cafe/FireShot Capture 023.png','Lounge/FireShot Capture 018.png','Lounge/FireShot Capture 024.png','Pizza/Pizza mob.png','Pizza/Pizza web.png'],
             },
             art: {
                 thumbnails: ['art.jpg'],
                 icons: ['art-icon.png','art-icon-white.png'],
-                screenShots: ['screen-1.jpg', 'screen-2.jpg', 'screen-3.jpg', 'screen-4.jpg', 'screen-5.jpg', 'screen-6.png'],
-=======
-                icons: ['food-icon.png'],
-                screenShots: ['Cafe/Cafe.png','Cafe/FireShot Capture 023.png','Lounge/FireShot Capture 018.png','Lounge/FireShot Capture 024.png','Pizza/Pizza mob.png','Pizza/Pizza web.png','screen-1.jpg', 'screen-2.jpg', 'screen-3.jpg', 'screen-4.jpg', 'screen-5.jpg', 'screen-6.png'],
-            },
-            art: {
-                thumbnails: ['art.jpg'],
-                icons: ['art-icon.png'],
-                screenShots: ['Tattoo/Tattoo1.png','Tattoo/Tattoo2.png','screen-1.jpg', 'screen-2.jpg', 'screen-3.jpg', 'screen-4.jpg', 'screen-5.jpg', 'screen-6.png'],
->>>>>>> 1979da339e6298e3c02bd466eb3aa64ba9e794ac
+                screenShots: ['Tattoo/Tattoo1.png','Tattoo/Tattoo2.png'],
             },
             law: {
                 thumbnails: ['law.jpg'],
                 icons: ['law-icon.png','law-icon-white.png'],
-                screenShots: ['screen-1.jpg', 'screen-2.jpg', 'screen-3.jpg', 'screen-4.jpg', 'screen-5.jpg', 'screen-6.png'],
+                screenShots: ['law/Law-screenshot-desk.jpg','law/Law-screenshot-mob.png'],
             },
             service: {
                 thumbnails: ['services.jpg'],
-<<<<<<< HEAD
                 icons: ['services-icon.png','services-icon-white.png'],
-                screenShots: ['screen-1.jpg', 'screen-2.jpg', 'screen-3.jpg', 'screen-4.jpg', 'screen-5.jpg', 'screen-6.png', 'beatySalon.jpg', 'gallery-1.jpg', 'mobile-1.jpg', 'mobile-homepage-1.jpg', 'mobile-menu-1.jpg'],
-=======
-                icons: ['services-icon.png'],
-                screenShots: ['Auto/AutoDesktop.png','Auto/AutoMob.png','Clothes/Clothing.png','Clothes/Clothing2.png','Clothes/Clothing3.png','screen-1.jpg', 'screen-2.jpg', 'screen-3.jpg', 'screen-4.jpg', 'screen-5.jpg', 'screen-6.png', 'beatySalon.jpg', 'gallery-1.jpg', 'mobile-1.jpg', 'mobile-homepage-1.jpg', 'mobile-menu-1.jpg'],
->>>>>>> 1979da339e6298e3c02bd466eb3aa64ba9e794ac
+                screenShots: ['Auto/AutoDesktop.png','Auto/AutoMob.png','Clothes/Clothing.png','Clothes/Clothing3.png', 'beatySalon.jpg', 'gallery-1.jpg', 'mobile-1.jpg', 'mobile-homepage-1.jpg', 'mobile-menu-1.jpg'],
             },
         }
 
