@@ -12,7 +12,7 @@ loadText = () => {
             banerInfo: 'Web page for 99€* done in 7 days*',
             servicesHeader: 'Services',
             servicesInfo: {
-                disclaimer: '* A price of € 99 is for forever finished designs only with a change in the picture and contents of any other change subject to a change in the price by agreement | * 7-day build time takes forever complete designs only by changing the image and content any other change is subject to a change in the build time | * Photographs and text provide the client in a digital format ',
+                disclaimer: '*The price of 99 € applies to finished designs only by changing images and content, any other change is subject to change on contract price | * 7-day production time applies to ready-made designs only by changing images and content every other change is subject to a change in production time | * Photos and text are provided by the client in digital form',
                 offers: {
                     basic: {
                         header: 'Basic',
@@ -22,12 +22,12 @@ loadText = () => {
                     pro: {
                         header: 'Pro',
                         price: '199€',
-                        content: ['DESIGN OPTIONAL (logo, banner, front interface)', 'gallery (unlimited photo gallery + video module)', 'bilingual version', 'up to 15 functional links', '5 email addresses']
+                        content: ['DESIGN OPTIONAL (logo, banner, front interface)', 'GALLERY (unlimited photo gallery + video module)', 'bilingual version', 'up to 15 functional links', '5 email addresses']
                     },
                     premium: {
                         header: 'Premium',
                         price: 'Price by agreement',
-                        content: ['DESIGN OPTIONAL (design to 0 according to your wishes and needs)', 'GALLERY (unlimited number on Photo Gallery + Video module)', 'more language version', 'unlimited links', 'unlimited email address']
+                        content: ['DESIGN OPTIONAL (design from 0 according to your wishes and needs)', 'GALLERY (unlimited number photo gallery + video module)', 'more language version', 'unlimited links', 'unlimited email address']
                     }
                 },
                 maintain: 'Maintenance prices vary by package type and the volume of changes',
@@ -41,7 +41,7 @@ loadText = () => {
                     We offer the best web solutions guaranteed. \
                     With our expert team in a short time your ideas can be realized. \
                     Each web site is made according to the latest standards and trends and each web site uses techniques used by the world\'s largest companies. \
-                    You are not building websites from scratch. We do not use finished templates or themes. We create them entirely according to your taste. We have a solution for all types of businesses, from micro businesses to huge companies.',
+                    We are building websites from scratch. We do not use finished templates or themes. We create them entirely according to your taste. We have a solution for all types of businesses, from micro businesses to huge companies.',
             contactHeader: 'Contact',
             contactInfo:{
                 info:{
@@ -74,17 +74,17 @@ loadText = () => {
                     basic: {
                         header: 'Основен',
                         price: '99€',
-                        content: ['ДИЗАЈН ПО ИЗБОР (од веке готовите понудени)', 'ГАЛЕРИЈА (20 photo)', 'Еднојазична верзија', 'До 5 функционални линкови', '2 емаил адреси']
+                        content: ['ДИЗАЈН ПО ИЗБОР (од веке готовите понудени)', 'ГАЛЕРИЈА (20 слики)', 'Еднојазична верзија', 'До 5 функционални линкови', '2 емаил адреси']
                     },
                     pro: {
                         header: 'Професионален',
                         price: '199€',
-                        content: ['ДИЗАЈН ПО ИЗБОР (подговотвка на Лого, Банер, Преден интерфејс )', 'ГАЛЕРИЈА (неограничен број на Галерии со фотографии + Видео модул)', 'Двојазична верзија', 'До 15 функционални линкови', '5 емаил адреси']
+                        content: ['ДИЗАЈН ПО ИЗБОР (подговотвка на Лого, Банер, Преден интерфејс )', 'ГАЛЕРИЈА (неограничен број на Галерии со фотографии + видео модул)', 'Двојазична верзија', 'До 15 функционални линкови', '5 емаил адреси']
                     },
                     premium: {
                         header: 'Премиум',
                         price: 'Цена по договор',
-                        content: ['ДИЗАЈН ПО ИЗБОР (изработка на дизајн од 0 според сите ваши желби и потреби)', 'ГАЛЕРИЈА (неограничен број на Галерии со фотографии + Видео модул)', 'Повеке јазична верзија', 'Неограничен број на линкови', 'Неограничен број на емаил адреси']
+                        content: ['ДИЗАЈН ПО ИЗБОР (изработка на дизајн од 0 според сите ваши желби и потреби)', 'ГАЛЕРИЈА (неограничен број на Галерии со фотографии + видео модул)', 'Повеке јазична верзија', 'Неограничен број на линкови', 'Неограничен број на емаил адреси']
                     }
                 },
                 maintain: 'Цените за одржување варираат од видот на пакетот и обемот на промените',
@@ -115,11 +115,11 @@ loadText = () => {
         al: {
             header: 'Përshendetje Botë',
             menu: [
-                'Shtëpia', 'Sherbime', 'Rreth nesh', 'Kontakt'
+                'Shtëpia', 'Sherbime', 'Për në', 'Kontakt'
 
             ],
             mainHeading: '99 / 7',
-            banerInfo: 'Web-faqje  për 99 € * për 7 ditë *',
+            banerInfo: 'Web-faqje për 99 € * e bërë në 7 ditë *',
             servicesHeader: 'Sherbime',
             servicesInfo: {
                 disclaimer:'* Një çmim prej 99 € është për dizajne të përfunduara përgjithmonë vetëm me një ndryshim në figurën dhe përmbajtjen e çdo ndryshimi tjetër që i nënshtrohet një ndryshimi të çmimit me marrëveshje | * Koha e ndërtimit 7-ditor kërkon përgjithmonë modele të plota vetëm duke ndryshuar imazhin dhe përmbajtjen çdo ndryshim tjetër i nënshtrohet një ndryshimi në kohën e ndërtimit | * Fotografitë dhe teksti i sigurojnë klientit në një formë figurative ',
@@ -127,17 +127,17 @@ loadText = () => {
                     basic: {
                         header:'Themelor',
                         price: '99€',
-                        content:['DESIGN OPTIONAL (gati ofruar)', 'GALLERY (20 foto)', 'Njëngjyrësh', 'Deri në 5 lidhje funksionale', '2 adresa emaili']
+                        content:['PROJEKTIMI OPSIONALE (gati ofruar)', 'GALERI (20 foto)', 'Njëngjyrësh', 'Deri në 5 lidhje funksionale', '2 adresa emaili']
                     },
                     pro: {
                         header: 'Pro',
                         price: '199€',
-                        content:['DESIGN OPTIONAL (logo, banderolë, ndërfaqe e përparme)', 'galeri (galeri fotografish pa kufij + modul video)', 'version dygjuhësh', 'deri në 15 lidhje funksionale', '5 adresa emaili']
+                        content:['PROJEKTIMI OPSIONALE (logo, banderolë, ndërfaqe e përparme)', 'GALERI (galeri fotografish pa kufij + modul video)', 'version dygjuhësh', 'deri në 15 lidhje funksionale', '5 adresa emaili']
                     },
                     premium: {
                         header: 'Premium',
                         price: 'Pricemimi me marrëveshje',
-                        content: ['DESIGN OPTIONAL (modelimi në 0 sipas dëshirave dhe nevojave tuaja)', 'GALLERY (numër i pakufizuar në Galerinë e Fotove + modul video)', 'version më shumë gjuhësor', 'lidhje të pakufizuara', 'adresë emaili të pakufizuar']
+                        content: ['PROJEKTIMI OPSIONALE (modelimi në 0 sipas dëshirave dhe nevojave tuaja)', 'GALERI (numër i pakufizuar në Galerinë e Fotove + modul video)', 'version më shumë gjuhësor', 'lidhje të pakufizuara', 'adresë emaili të pakufizuar']
                     }
                 },
                 maintain: 'Kostot e mirëmbajtjes ndryshojnë sipas llojit të paketës të ndryshimeve',
@@ -146,7 +146,7 @@ loadText = () => {
                     list:['Ushqimi', 'Arti', 'Ligji', 'Shërbimi']
                 }
             },            
-            aboutHeader: 'Rreth',
+            aboutHeader: 'Për në',
             aboutInfo: 'Click-Box është një ekip profesionistësh me përvojë në zhvillimin e zgjidhjeve në internet. Ne ofrojmë zgjidhjet më të mira të garantuara në internet. Me ekipin tonë të ekspertëve brenda një kohe të shkurtër idetë tuaja mund të realizohen. Të gjitha faqet në internet jan bërë sipas standardeve dhe tendencave të fundit dhe çdo faqe në internet përdor teknika të përdorura nga kompanitë më të mëdha në botë. Ne po ndërtoni faqet e internetit nga e para. Ne nuk përdorim shabllone ose tema të përfunduara. Ne i krijojmë ato plotësisht sipas shijes tuaj. Ne kemi një zgjidhje për të gjitha llojet e bizneseve, nga bizneset mikro deri te kompanitë e mëdha.',
             contactHeader: 'Kontakt',
             contactInfo:{
