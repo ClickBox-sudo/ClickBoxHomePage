@@ -115,11 +115,11 @@ loadText = () => {
         al: {
             header: 'Përshendetje Botë',
             menu: [
-                'Shtëpia', 'Sherbime', 'Rreth', 'Kontakt'
+                'Shtëpia', 'Sherbime', 'Rreth nesh', 'Kontakt'
 
             ],
             mainHeading: '99 / 7',
-            banerInfo: 'Faqja në internet për 99 € * e bërë në 7 ditë *',
+            banerInfo: 'Web-faqje  për 99 € * për 7 ditë *',
             servicesHeader: 'Sherbime',
             servicesInfo: {
                 disclaimer:'* Një çmim prej 99 € është për dizajne të përfunduara përgjithmonë vetëm me një ndryshim në figurën dhe përmbajtjen e çdo ndryshimi tjetër që i nënshtrohet një ndryshimi të çmimit me marrëveshje | * Koha e ndërtimit 7-ditor kërkon përgjithmonë modele të plota vetëm duke ndryshuar imazhin dhe përmbajtjen çdo ndryshim tjetër i nënshtrohet një ndryshimi në kohën e ndërtimit | * Fotografitë dhe teksti i sigurojnë klientit në një formë figurative ',
@@ -140,18 +140,14 @@ loadText = () => {
                         content: ['DESIGN OPTIONAL (modelimi në 0 sipas dëshirave dhe nevojave tuaja)', 'GALLERY (numër i pakufizuar në Galerinë e Fotove + modul video)', 'version më shumë gjuhësor', 'lidhje të pakufizuara', 'adresë emaili të pakufizuar']
                     }
                 },
-                maintain: 'Pricesmimet e mirëmbajtjes ndryshojnë sipas llojit të paketës dhe vëllimit të ndryshimeve',
+                maintain: 'Kostot e mirëmbajtjes ndryshojnë sipas llojit të paketës të ndryshimeve',
                 templates:{
                     header:'Harton',
                     list:['Ushqimi', 'Arti', 'Ligji', 'Shërbimi']
                 }
             },            
             aboutHeader: 'Rreth',
-            aboutInfo: 'Click-Box është një ekip profesionistësh me përvojë në zhvillimin e zgjidhjeve në internet. \
-                    Ne nuk ofrojmë zgjidhjet më të mira të garantuara në internet. \
-                    Me ekipin tonë të ekspertëve brenda një kohe të shkurtër idetë tuaja mund të realizohen. \
-                    Do faqe në internet është bërë sipas standardeve dhe tendencave të fundit dhe çdo faqe në internet përdor teknika të përdorura nga kompanitë më të mëdha në botë. \
-                    Ju nuk po ndërtoni faqet e internetit nga e para. Ne nuk përdorim shabllone ose tema të përfunduara. Ne i krijojmë ato plotësisht sipas shijes tuaj. Ne kemi një zgjidhje për të gjitha llojet e bizneseve, nga bizneset mikro deri te kompanitë e mëdha.',
+            aboutInfo: 'Click-Box është një ekip profesionistësh me përvojë në zhvillimin e zgjidhjeve në internet. Ne ofrojmë zgjidhjet më të mira të garantuara në internet. Me ekipin tonë të ekspertëve brenda një kohe të shkurtër idetë tuaja mund të realizohen. Të gjitha faqet në internet jan bërë sipas standardeve dhe tendencave të fundit dhe çdo faqe në internet përdor teknika të përdorura nga kompanitë më të mëdha në botë. Ne po ndërtoni faqet e internetit nga e para. Ne nuk përdorim shabllone ose tema të përfunduara. Ne i krijojmë ato plotësisht sipas shijes tuaj. Ne kemi një zgjidhje për të gjitha llojet e bizneseve, nga bizneset mikro deri te kompanitë e mëdha.',
             contactHeader: 'Kontakt',
             contactInfo:{
                 info:{
