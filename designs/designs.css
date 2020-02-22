@@ -1,0 +1,40 @@
+#master{
+    flex-flow: column;
+}
+.category-menu-container{
+    flex-flow: row wrap;
+    width: 100%;
+    padding-top: 220px;
+    background-color: rgb(13, 0, 255);
+    color: white;
+}
+.category-menu-container ul{
+    border-top: 1px solid white;
+    width: 100%;
+    justify-content: center;
+}
+.category-menu-container li{
+    padding: 10px;
+    font-size: 130%;
+}
+
+
+@media only screen and (min-width: 769px){
+    #master{
+        flex-flow: row;
+    }
+    .category-menu-container{
+        flex-flow: column ;
+        justify-content: center;
+        width: 10%;
+        height: 100vh;
+        padding-top: 30px;
+        background-color: rgb(13, 0, 255);
+        color: white;
+    }
+    .category-menu-container ul{
+        border-top: none;
+        width: 100%;
+        flex-flow: column;
+    }
+}
