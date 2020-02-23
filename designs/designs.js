@@ -11,7 +11,18 @@ main=(content,graphics)=>{
     createCategoryMenu(content);
     createDesignsContainer(content,graphics);
     
-
+    $('.thumbnail-wrapper').click((event)=>{
+        let path = $(event.target).attr('src')
+        path = path.split('/');
+        path.splice(path.length-1,1,'index.html');
+       path=path.join('/')
+       window.open(path,'_blank');
+    });
+$('.category-menu-item').click((event)=>{
+    let elemToCategory = $(event.target).attr('id');
+    $('.designs-container').html(' ');
+    createAllThumbnails(elemToCategory,graphics);
+});
 
     let mobMenuIcon= $('.mob-icon-menu');
     let mobMenuIconDesk = $('.main-menu-desk');

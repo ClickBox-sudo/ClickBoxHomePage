@@ -34,7 +34,8 @@ width: 100%;
     text-align: left;
     padding: 15px 0px;
     width:100%;
-    flex-flow: column;
+    flex-flow: row;
+    justify-content: space-between;
 }
 .template-galery-header{
     padding-bottom: 5px;
@@ -42,7 +43,7 @@ width: 100%;
     font-size: 96%;
 }
 div[class*="template-galery-list-"]{
-    width:25%;
+    width:100%;
 }
 li[class*="template-galery-list-item-"]:hover{
     cursor: pointer;

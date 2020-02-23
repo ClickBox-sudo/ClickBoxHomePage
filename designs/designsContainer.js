@@ -1,14 +1,9 @@
 createThumbnail = (content,image,icon)=>{
-    let folder = content.toLowerCase();
-    console.log(folder);
-    console.log(content)
-    console.log(graphics)
-
-
+    let folder = icon.split('-');
     let thumbnailWrapper = $('<div>').attr('class','flex thumbnail-wrapper').attr('id',content);
 
     let thumbImageHolder = $('<div>').attr('class','flex thumbnail-image-container');
-    let thumbnailImage = $('<img>').attr('src','../content/screen-shots/'+folder+'/'+image)
+    let thumbnailImage = $('<img>').attr('src','../content/screen-shots/'+folder[0]+'/'+image).attr('class',image);
 
     let thumbnailinfo = $('<div>').attr('class','flex thumbnail-info');
     let thumbnailCategoryIcon = $('<img>').attr('src','../content/icons/'+icon)
@@ -23,16 +18,26 @@ createThumbnail = (content,image,icon)=>{
 
     $('.designs-container').append(thumbnailWrapper);
 
+
+
+};
+createAllThumbnails=(category,graphics)=>{
+    let cat = category.toLowerCase()
+    // let category = content.servicesInfo.templates.list[0];
+    let images = graphics.templates[cat].screenShots;
+    let iconImg = graphics.templates[cat].icons[1];
+    images.forEach((elem,index)=>{
+        createThumbnail(category+'-'+index,elem,iconImg)
+     });
 }
 
 createDesignsContainer = (content,graphics)=>{
-    let category = content.servicesInfo.templates.list;
-    let images = graphics.templates.food.screenShots;
-    let icon = graphics.templates.food.icons; 
     let designsContainer = $('<div>').attr('class', 'flex designs-container');
     
-    
     $(master).append(designsContainer);
-    createThumbnail(category[0],images[0],icon[0])
+    createAllThumbnails('Food',graphics);
+    createAllThumbnails('Art',graphics);
+    createAllThumbnails('law',graphics);
+    createAllThumbnails('Service',graphics);
 
 }

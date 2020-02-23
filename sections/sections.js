@@ -11,7 +11,6 @@ addClassAnimateSection = (elementToView, elementToAnimate, cssClass) => {
 
 createFooter=(graphics)=>{
   let logoIcon = graphics.logos.fullWhiteLogo
-  console.log(logoIcon)
   let footer = $('<div>').attr('class','flex footer');
   let logo = $('<img>').attr('src','./content/logo/'+logoIcon)
   $(footer).append(logo)

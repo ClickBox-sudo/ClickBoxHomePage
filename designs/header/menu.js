@@ -56,6 +56,9 @@ mainMenuDesk = (menuList, graphic) => {
     $(master).append(mainMenu);
 
     $('.main-menu-desk li').on('click', (event) => {
+        let path = '../index.html';
+        window.open(path,'_self');
+        
         let className = $(event.target).attr('class').split(' ');
         let idName = $(event.target).attr('id').split('-');
 
@@ -116,6 +119,9 @@ mainMenuMob = (menuList, graphic) => {
     });
 
     $('.main-menu-mob li').on('click', (event) => {
+        let path = '../index.html';
+        window.open(path,'_self');
+
         let className = $(event.target).attr('class').split(' ');
         let idName = $(event.target).attr('id').split('-');
 

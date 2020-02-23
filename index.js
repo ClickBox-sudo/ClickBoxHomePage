@@ -47,4 +47,9 @@ main(content.en,graphics)
                         $(master).html(' ');
                         main(content.al,graphics)
                     });
+
+                    $('.designs-btn').on('click',()=>{
+                        window.open('designs/designs.html','_self');
+
+                    })
 });

@@ -1,7 +1,6 @@
 createPopUpGalery = (category) => {
 
     let icon = category.icons[1];
-    console.log(icon)
     let heading = icon.split('-');
     let folder = heading[0];
     heading = heading[0].toUpperCase()
@@ -115,18 +114,24 @@ createPicturePanel = (content, graphic) => {
     return picturePanelWrapper
 
 }
-
+createViewDesignsBtn = (content)=>{
+    console.log(content.aboutHeader)
+     let btn = $('<button>').attr('class','designs-btn').text(content.headerBtn);
+     return btn
+}
 createTemplateGalery = (content, graphic) => {
     let picturePanel = createPicturePanel(content, graphic)
     let templateList = createListPanel(content, graphic);
+    let designsBtn = createViewDesignsBtn(content)
     let templateGaleryWrapper = $('<div>').attr('class', 'flex template-galery-wrapper');
     let templateGaleryListWrapper = $('<div>').attr('class', 'flex template-galery-list-wrapper');
 
     let templateGaleryHeader = $('<h3>').attr('class', 'template-galery-header').text(content.header);
 
-    $(templateGaleryListWrapper).append(templateGaleryHeader);
+    $(templateGaleryWrapper).append(templateGaleryHeader);
     $(templateGaleryListWrapper).append(templateList);
-
+    $(templateGaleryListWrapper).append(designsBtn);
+    
     $(templateGaleryWrapper).append(templateGaleryListWrapper);
     $(templateGaleryWrapper).append(picturePanel);
 

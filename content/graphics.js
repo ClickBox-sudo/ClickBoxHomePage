@@ -65,7 +65,7 @@ loadGraphic = () => {
             service: {
                 thumbnails: ['services.jpg'],
                 icons: ['services-icon.png','services-icon-white.png'],
-                screenShots: ['Auto/AutoDesktop.png','Auto/AutoMob.png','Clothes/Clothing.png','Clothes/Clothing3.png', 'beatySalon.jpg', 'gallery-1.jpg', 'mobile-1.jpg', 'mobile-homepage-1.jpg', 'mobile-menu-1.jpg'],
+                screenShots: ['Auto/AutoDesktop.png','Auto/AutoMob.png','Clothes/Clothing.png','Clothes/Clothing3.png', 'beauty/beatySalon.jpg', 'beauty/mobile-1.jpg', 'beauty/mobile-homepage-1.jpg'],
             },
         }
 

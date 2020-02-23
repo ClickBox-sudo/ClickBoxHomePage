@@ -4,7 +4,6 @@ loadText = () => {
 
 
         en: {
-            header: 'Hallo World',
             menu: [
                 'Home', 'Services', 'About', 'Contact'
             ],
@@ -32,6 +31,7 @@ loadText = () => {
                 },
                 maintain: 'Maintenance prices vary by package type and the volume of changes',
                 templates:{
+                    headerBtn:'View our designs',
                     header:'Designs',
                     list:['Food','Art','Law','Service']
                 }
@@ -61,7 +61,6 @@ loadText = () => {
 
 
         mk: {
-            header: 'Хало Ворлд',
             menu: [
                 'Дома', 'Услуги', 'За нас', 'Контакт'
             ],
@@ -89,6 +88,7 @@ loadText = () => {
                 },
                 maintain: 'Цените за одржување варираат од видот на пакетот и обемот на промените',
                 templates:{
+                    headerBtn:'Погледнете ги нашите дизајни',
                     header:'Дизајни',
                     list:['Храна','Уметност','Право','Сервиси']
                 }
@@ -113,7 +113,6 @@ loadText = () => {
                     }
             }        },
         al: {
-            header: 'Përshendetje Botë',
             menu: [
                 'Shtëpia', 'Sherbime', 'Për në', 'Kontakt'
 
@@ -142,6 +141,7 @@ loadText = () => {
                 },
                 maintain: 'Kostot e mirëmbajtjes ndryshojnë sipas llojit të paketës të ndryshimeve',
                 templates:{
+                    headerBtn:'Shikoni modelet tona',
                     header:'Harton',
                     list:['Ushqimi', 'Arti', 'Ligji', 'Shërbimi']
                 }
