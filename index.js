@@ -14,6 +14,7 @@ main=(content,graphics)=>{
     createSections(content,graphics);
 
 
+
     let mobMenuIcon= $('.mob-icon-menu');
     let mobMenuIconDesk = $('.main-menu-desk');
     let sectionService = $('#services');
@@ -34,7 +35,10 @@ main=(content,graphics)=>{
  
 }
 
-main(content.en,graphics)
+main(content.en,graphics);
+setTimeout(()=>createSponsoredPopUp('MediCrops.png','https://medicrops.ch/en/production-site/'),10000)
+setInterval(()=>createSponsoredPopUp('MediCrops.png','https://medicrops.ch/en/production-site/'),300000)
+
                     $('#mk-btn').on('click',()=>{
                         $(master).html(' ');
                         main(content.mk,graphics)

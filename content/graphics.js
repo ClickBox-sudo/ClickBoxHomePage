@@ -10,6 +10,7 @@ loadGraphic = () => {
             lickBox: 'Click-Box-logo2.svg',
             lick: 'Click-Box-logo3.svg',
             box: 'Click-Box-logo4.svg',
+            sponsored_1:'MediCrops.png'
 
         }
 

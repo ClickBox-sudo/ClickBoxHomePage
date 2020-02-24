@@ -17,8 +17,14 @@ createThumbnail = (content,image,icon)=>{
     $(thumbnailWrapper).append(thumbnailinfo);
 
     $('.designs-container').append(thumbnailWrapper);
-
-
+    $(thumbnailWrapper).click((event)=>{
+        let path = $(event.target).attr('src')
+        path = path.split('/');
+        path.splice(path.length-1,1,'index.html');
+       path=path.join('/');
+       console.log(path)
+       window.open(path,'_blank');
+    });
 
 };
 createAllThumbnails=(category,graphics)=>{
@@ -29,6 +35,7 @@ createAllThumbnails=(category,graphics)=>{
     images.forEach((elem,index)=>{
         createThumbnail(category+'-'+index,elem,iconImg)
      });
+
 }
 
 createDesignsContainer = (content,graphics)=>{
@@ -39,5 +46,6 @@ createDesignsContainer = (content,graphics)=>{
     createAllThumbnails('Art',graphics);
     createAllThumbnails('law',graphics);
     createAllThumbnails('Service',graphics);
+
 
 }

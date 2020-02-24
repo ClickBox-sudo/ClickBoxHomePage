@@ -13,3 +13,10 @@ createCategoryMenu=(content)=>{
     $(categoryMenuContainer).append(categoryMenu);
     $(master).append(categoryMenuContainer);
 }
+addClassActiveBtn=(element,cssClass,elemList)=>{
+    let testcssClass = new RegExp(cssClass);
+    for (let index = 0; index < elemList.length; index++) {
+        testcssClass.test($(elemList[index]).attr('class'))?$(elemList[index]).removeClass(cssClass):null;
+    }
+    $(element).addClass(cssClass)
+};
