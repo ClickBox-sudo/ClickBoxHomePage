@@ -185,7 +185,7 @@ transform: rotateZ(90deg);
     margin:5px 0 5px 0;
 
 }
-input:last-of-type(){
+.input input:last-of-type(){
     height: 200px;
 }
 .footer{
@@ -199,9 +199,10 @@ input:last-of-type(){
     height: 30px;
 }
 
+
 @media only screen and (min-width: 769px){
     .clippy-right-back{
-        overflow: visible;
+        overflow-x: hidden;
     }
     .section-header-left, .section-header-right{
         font-size: 500%;
@@ -296,7 +297,7 @@ div[class^="social-"]{
 }
 .input-holder{
     width:50%;
-    padding:20px;
+    padding:25px;
     height: 50%;
     align-items: flex-start;
     justify-content: flex-start;

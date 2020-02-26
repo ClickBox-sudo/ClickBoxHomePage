@@ -33,6 +33,9 @@
     height: 200px;
     overflow: hidden;
 }
+.thumbnail-image-container img{
+    width: 100%;
+}
 .thumbnail-info{
     width: 100%;
     justify-content: space-between;
@@ -40,6 +43,7 @@ align-content: center;
 }
 .thumbnail-info img{
     height: 50px;
+    width: 50px;
     background-color: rgb(13, 0, 255);
     padding: 10px;
 }
@@ -100,6 +104,7 @@ font-weight: 900;
     }
     .thumbnail-info img{
         height: 30px;
+        width: 30px;
         background-color: rgb(13, 0, 255);
         padding: 5px;
     }

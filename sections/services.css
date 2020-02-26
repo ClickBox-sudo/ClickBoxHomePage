@@ -26,6 +26,7 @@ width: 100%;
 }
 .template-galery-wrapper{
     width:90%;
+    padding-top: 15px;
 }
 .picture-panel-wrapper {
     display: none;
@@ -117,6 +118,16 @@ li[class*="template-galery-list-item-"]:hover{
         .popup-galery-picture{
             width: 100%;
         }
+
+        .designs-btn{
+            background-color: blue;
+            color:white;
+            padding: 0 10px;
+            text-transform: uppercase;
+            font-size: 100%;
+            font-weight: 900;
+            border-radius: 10px;
+        }
 @media only screen and (min-width: 769px){
     .info-disclaimer-wrapper{
         font-size:70%;
@@ -173,5 +184,10 @@ cursor:pointer
         width:70px;
         height: 70px;
         padding: 20px;
+    }
+    .designs-btn{
+        padding: 0 20px;
+        font-size: 185%;
+        cursor: pointer;
     }
 }
