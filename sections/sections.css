@@ -266,6 +266,9 @@ input:last-of-type(){
     width: 100%;
     justify-content: space-around;
 }
+div[class^="social-"]{
+    cursor: pointer;
+}
 .info-list-wrapper{
     width: 50%;
     padding:10px 0;

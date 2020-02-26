@@ -43,7 +43,13 @@ loadGraphic = () => {
 
                 mail:'<i class="far fa-envelope"></i>',
                 mob:'<i class="fas fa-mobile-alt"></i>',
-                location:'<i class="fas fa-map-marker-alt"></i>'
+                location:'<i class="fas fa-map-marker-alt"></i>',
+                links:{
+                    facebook:'https://www.facebook.com/ToClickBox/',
+                    instagram:'https://www.instagram.com',
+                    linkedin:'https://www.linkedin.com',
+                    github:'https://www.github.com'
+                }
             }
 
         },

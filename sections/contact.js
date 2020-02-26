@@ -82,4 +82,18 @@ createContact=(content,graphics)=>{
      $(wrapper).append(header);
      $(headerHolderBack).append(infoHolder);
     return $(wrapper).append(headerHolderBack)
+};
+
+addSocialLinks=(graphic)=>{
+    let links = graphic.icons.contact.links
+    let Alllinks = Object.keys(links)
+    $('div[class^="social-"]').click((event)=>{
+        let elemClass = $(event.target).attr('class').split('-'); 
+        let linkObjKey = Alllinks.filter((elem)=>{
+            let cssClass = new RegExp(elem);
+            let linkKeyWord = cssClass.test(elemClass);
+            return linkKeyWord
+        });
+        window.open(links[linkObjKey[0]],'_blank')
+    })
 }

@@ -12,7 +12,7 @@ main=(content,graphics)=>{
     createMenu(content,graphics);
     createHeaderBanner(content,graphics);
     createSections(content,graphics);
-
+    addSocialLinks(graphics);
 
 
     let mobMenuIcon= $('.mob-icon-menu');
