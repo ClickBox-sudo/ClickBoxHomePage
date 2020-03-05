@@ -45,6 +45,7 @@ contactList.forEach((elem,index)=>{
     let item = $('<li>').attr('class','flex contact-'+elem).html(contactIcons[contactIconList[index]]).append($('<p>').text(contact[elem]))
     $(contactContainer).append(item);
 });
+
     $(infoListWrapper).append(contactContainer)
     $(socialWrapper).append(socialIconHolder);
     $(socialContactInfoWrapper).append(socialWrapper);
@@ -97,3 +98,4 @@ addSocialLinks=(graphic)=>{
         window.open(links[linkObjKey[0]],'_blank')
     })
 }
+

@@ -32,7 +32,13 @@ main=(content,graphics)=>{
     addClassAnimateSection(sectionAbout,rightSectionHeaderAbout,'right-section-animate')
 
 };
- 
+
+$('.contact-email p').on('click',()=>{
+  location.href='mailto:contact@clickbox.mk';
+})
+$('.contact-tel p').on('click',()=>{
+  location.href='tel:070707564';
+  })
 }
 
 main(content.en,graphics);
