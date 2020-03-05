@@ -45,7 +45,7 @@ loadText = () => {
             contactHeader: 'Contact',
             contactInfo:{
                 info:{
-                    email:'clickbox1@gmail.com',
+                    email:'contact@clickbox.mk',
                     tel:'+38970 707 564',
                     location:'Skopje RNM'
                     },
@@ -102,7 +102,7 @@ loadText = () => {
             contactHeader: 'Контакт',
             contactInfo:{
                 info:{
-                    email:'clickbox1@gmail.com',
+                    email:'contact@clickbox.mk',
                     tel:'+38970 707 564',
                     location:'Скопје РСМ'
                     },
@@ -151,7 +151,7 @@ loadText = () => {
             contactHeader: 'Kontakt',
             contactInfo:{
                 info:{
-                    email:'clickbox1@gmail.com',
+                    email:'contact@clickbox.mk',
                     tel:'+38970 707 564',
                     location:'Shkup RVM'
                     },
